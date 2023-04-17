@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400&family=Lora&display=swap');
+
+body {
+    margin:0;
+}
+
+.Logo_Name {
+    width:100%;
+    height:110px;
+    background-color: #A66300;
+    display:flex;
+    border-bottom-width:8px;
+    border-bottom-color:#562F00;
+    border-bottom-style:solid;
+}
+
+.Logo {
+    position:absolute;
+    width:100px;
+    margin-top:5px;  
+    margin-left:15%;
+    
+}
+
+.Header {
+    position:relative;
+    font-family: 'Lora', serif;
+}
+
+.Title {
+    
+    width:100%;
+    text-align:center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 46px;
+    color: #FFC773;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.Menu {
+    width:100%;
+    height:90px;
+    background-color: #FF9900;
+
+    border-bottom-width:8px;
+    border-bottom-color:#562F00;
+    border-bottom-style:solid;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menu_text {
+    width:90%;
+
+    text-align:center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    word-spacing:230px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#FFC773;
+}
+
+a:active {
+    color:#A66300;
+}
+
+.Info {
+    width:100%;
+    height: 1207px;
+    background: url(Info_bg.png) no-repeat center;
+    background-size: cover;
+    display:flex;
+}
+
+#Books {
+    width:100%;
+    max-height: 240px;
+}
+
+.Info_headl {
+    position:absolute;
+    margin-top:250px;
+    margin-left:21%;
+    
+
+}
+
+h1 {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #693900;
+}
+
+.Info_txt {
+    position:absolute;
+    margin-left:21%;
+    margin-right:20%;
+    margin-top: 338px;
+    height:252px;
+
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+
+    color: #4A2800;
+}
+
+#Letter {
+    position:absolute;
+    margin-top: 755px;
+    margin-left:5%;
+    margin-right:5%;
+    width: 90%;
+    max-height: 312px;
+
+    display:flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
