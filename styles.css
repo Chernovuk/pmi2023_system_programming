@@ -75,35 +75,37 @@ a {
 }
 
 a:hover {
-    color:#FFC773;
+    color:#A66300;
 }
 
 a:active {
-    color:#A66300;
+
+    color:#FFC773;
+    
 }
 
 .Info {
     width:100%;
-    height: 1207px;
-    background: url(Info_bg.png) no-repeat center;
-    background-size: cover;
+    height: 1170px;
+    background-color:#FFC773;
     display:flex;
+    flex-direction: column;
 }
 
 #Books {
+
     width:100%;
     max-height: 240px;
 }
 
 .Info_headl {
-    position:absolute;
-    margin-top:250px;
-    margin-left:21%;
     
-
+    margin-top:40px;
+    margin-left:21%;
 }
 
 h1 {
+    margin:0;
     font-family: 'Alegreya Sans';
     font-style: normal;
     font-weight: 700;
@@ -114,11 +116,11 @@ h1 {
 }
 
 .Info_txt {
-    position:absolute;
+    
     margin-left:21%;
     margin-right:20%;
-    margin-top: 338px;
-    height:252px;
+    margin-top: 20px;
+    
 
     font-family: 'Alegreya Sans';
     font-style: normal;
@@ -130,14 +132,20 @@ h1 {
 }
 
 #Letter {
-    position:absolute;
-    margin-top: 755px;
+    margin-top: 70px;
     margin-left:5%;
     margin-right:5%;
     width: 90%;
-    max-height: 312px;
+    /* max-height: 312px; */
+}
 
-    display:flex;
-    /* align-items: center; */
-    /* justify-content: center; */
+.Editors {
+    background-color: #FFA840;
+    height: 910px;
+    padding:0;
+    margin: 0;
+}
+
+.Editors_headl {
+    margin-top:0px
 }
