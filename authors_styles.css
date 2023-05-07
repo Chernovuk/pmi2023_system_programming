@@ -1,0 +1,64 @@
+.To_authors {
+    background-color: #FFC773;
+    min-height:865px;
+
+    display:flex;
+    flex-direction: column;
+}
+
+.Authors_headl {
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#Writing {
+
+    margin-top:70px;
+    margin-left:18%;
+    margin-right:18%;
+}
+
+.References {
+    margin-top:70px;
+    width:100%;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+
+    gap:10%;
+}
+
+.Icons {
+    max-width:120px;
+}
+
+.Icon_txt {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #153DCA;
+
+    margin-top:10%;
+    margin-bottom:20%;
+}
+
+.Refs {
+    color:#0B61A4;
+    /* text-decoration: none; */
+}
+
+.Refs:hover {
+    color:#033E6B;
+}
+
+.Refs:active {
+
+    color:#66A3D2;
+    
+}

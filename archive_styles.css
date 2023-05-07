@@ -1,0 +1,98 @@
+.Archive {
+    min-height: 822px;
+    background-color: #FFC773;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+}
+
+.Archive_headl {
+    margin-top:40px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.Years_wrapper {
+    margin-top:60px;
+    margin-left:15%;
+    width:300px;
+    height:100px;
+
+    background-color: #FFA840;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+.Years_txt {
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #4A2800;
+}
+
+.Arrow {
+    margin-left:10%;
+    width:30px;
+}
+
+.Release_years {
+    display:flex;
+    
+}
+
+.Journals {
+    display:flex;
+    flex-direction: column;
+
+    margin-top:25px;
+    margin-left:17%;
+    margin-right:17%;
+
+    max-width: 700px;
+}
+
+.Year {
+    display:flex;
+    flex-direction: column;
+    /* justify-content:center; */
+}
+
+.Number {
+    margin-left:auto;
+    margin-right:auto;
+
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+
+    color: #FF971B;
+    /* color: #FF8B00; */
+}
+
+.Line {
+    width:100%;
+}
+
+.Publications {
+    margin-top:20px;
+    margin-bottom:50px;
+
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap:20px;
+}
+
+.Cover {
+    width:200px;
+}
+
+.Years_ref {
+    color:#FF971B;
+}
