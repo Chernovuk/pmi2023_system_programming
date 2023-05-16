@@ -19,14 +19,6 @@
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-
-    font-family: 'Alegreya Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-
-    color: #000000;
 }
 
 #Phone {
