@@ -38,6 +38,7 @@ body {
     font-size: 32px;
     line-height: 40px;
     color: #FFC773;
+    text-align: center;
 
     display:flex;
     align-items: center;

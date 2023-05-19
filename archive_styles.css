@@ -48,14 +48,28 @@
     color: #4A2800;
 }
 
-.Arrow {
+.Slider_trigger {
     margin-left:10%;
-    width:30px;
 }
 
-.Year_choice {
+.Arrow {
+    /* margin-left:10%; */
+    width:30px;
+    transition: .2s all linear;
+}
+
+.Arrow.active {
+    transform:rotate(-180deg);
+    transition: .2s all ease-in-out;
+}
+
+.Year_choice {  /*Высота одного блока с годом - 65px, двух - 132px, трех - 200px */
     margin-left:15%;
     width:90%;
+    height:195px;
+    overflow-y: auto;
+    overflow-x:hidden;
+    /* white-space: nowrap; */
 
     display: flex;
     flex-direction: column;
@@ -63,11 +77,26 @@
     align-items: center;
 
     background-color: lightgray;
-    /* border-radius: 10px; */
     border-style:solid;
     border-top:0px;
     border-bottom:0px;
     border-width:2px;
+
+    position: relative;
+    top:-50px;
+    visibility: hidden;
+    pointer-events:none;
+    opacity:0;
+    transition: .2s all linear;
+}
+
+.Year_choice.active {
+    visibility: visible;
+    pointer-events:inherit;
+    transition: .2s all ease-in-out;
+    opacity:1;
+    top:0;
+
 }
 
 .Year_t {
@@ -100,6 +129,7 @@
 
 .Release_years {
     display:flex;
+    /* flex-wrap: wrap; */
     
 }
 
@@ -155,3 +185,11 @@
 .Years_ref {
     color:#FF971B;
 }
+
+
+
+/* @media (min-width:100px) and (max-width:400px) {
+    .Release_years {
+        flex-wrap:wrap;
+    }
+} */
