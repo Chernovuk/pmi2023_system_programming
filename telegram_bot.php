@@ -2,14 +2,14 @@
 
     $name = $_POST["Name"];
     $email = $_POST["Mail"];
-    $phone = $_POST["Phone_number"]
+    $phone = $_POST["Phone_number"];
     $message = $_POST["Comment"];
 
     $arr = array(
         'Имя: ' => $name,
-        'Email' => $email,
-        'Номер телефона' => $phone,
-        'Сообщение:' => $message
+        'Email: ' => $email,
+        'Номер телефона: ' => $phone,
+        'Сообщение: ' => $message
     );
       
     foreach($arr as $key => $value) {
@@ -17,9 +17,9 @@
     };
 
 
-    $token = "5462314075:AAFASdIe9wi3KRIAy41FOr7Ft4GeR8FVJAo";
+    $token = "6093894483:AAE59VSrIR83WbMHzr8DjrUWVipwDgai9PE";
     $chat_id = "-1001955788606";
 
     $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$txt}","r");
-
+    // return true;
 ?>

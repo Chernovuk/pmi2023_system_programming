@@ -132,7 +132,7 @@
 
 .Release_years {
     display:flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     
 }
 
@@ -191,8 +191,8 @@
 
 
 
-/* @media (min-width:100px) and (max-width:400px) {
+@media screen and (max-width:800px) {
     .Release_years {
-        flex-wrap:wrap;
+        flex-direction:column;
     }
-} */
+}

@@ -2,6 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <title>History Journal</title>
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="contacts_styles.css">
@@ -29,7 +31,7 @@
                         <a href="index.html" class="Menu_item">Главная</a>
                         <a href="authors.html" class="Menu_item">Авторам</a>
                         <a href="archive.html" class="Menu_item">Архив</a>
-                        <a href="contacts.html" class="Menu_item">Контакты</a>
+                        <a href="contacts.php" class="Menu_item">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -58,13 +60,13 @@
                 </div>
                 <div class="Feedback">
                     <p class="Info_txt Feedb">Есть вопросы или хотите оставить отзыв?</p>
-                    <form action="" id="Form">
+                    <form id="Form">
                         <input name="Name" type="text" class="Formstyle" placeholder="Ваше имя" required maxlength="50">
-                        <input name="Mail" type="email" class="Formstyle" placeholder="Почта" maxlength="30">
+                        <input name="Mail" type="email" class="Formstyle" placeholder="Почта" maxlength="20">
                         <input name="Phone_number" type="tel" class="Formstyle Number" placeholder="Номер телефона" maxlength="10">
-                        <textarea name="Comment" type="text" class="Formstyle Commentary" placeholder="Сообщение" required maxlength="220"></textarea>
+                        <textarea name="Comment" type="text" class="Formstyle Commentary" placeholder="Сообщение" required maxlength="256"></textarea>
 
-                        <button id="Send_button" type="button"><p class="Info_txt">Отправить</p></button>
+                        <button id="Send_button"><div class="Info_txt">Отправить</div></button>
                     </form>
                 </div>
             </div>
@@ -75,10 +77,9 @@
             <img src="Logo.png" alt="" class="Logo_f">
         </div>
 
-        
         <script src="animation/jquery-3.6.0.min.js"></script>
-        <script src="burger_script.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src="telegram_bot.js"></script>
+        <script src="burger_script.js"></script>
     </body>
 </html>

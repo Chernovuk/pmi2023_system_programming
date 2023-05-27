@@ -149,14 +149,24 @@
     height:70px;
     width:250px;
     
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color:#FF971B;
+
+    border-style:groove;
+    border-width:3px;
+    border-color:#562F00;
     box-shadow: inset;
     cursor: pointer;
 }
 
+.Info_txt {
+    margin:0;
+}
+
 @media (max-width:800px) {
-    .Info_Form_wrapper {
+    /* .Title {
         margin:0;
-        
-    }
+    } */
 }

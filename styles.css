@@ -279,19 +279,26 @@ h1 {
     overflow: hidden;
 } */
 
+.Header_burger.active {
+    display:block;
+    position:relative;
+}
+
 
 @media screen and (max-width:800px) {
 
     .Header_burger {
         display:block;
-        position:absolute;
-        right:0;
+        position:relative;
+        /* right:0;  */
     }
 
 
     .Menu {
         position:absolute;
-        right:-50px;
+        right:-150px;
+        /* right:0; */
+        /* z-index:-50; */
         height:350px;
         width:40%;
         border-left-width:6px;
@@ -307,10 +314,10 @@ h1 {
 
     }
 
-    .Menu_wrapper {
-        /* position: relative; */
+    /* .Menu_wrapper {
+        position: relative;
         overflow: hidden;
-    }
+    } */
 
     .Menu_text {
         display:flex;
@@ -324,5 +331,6 @@ h1 {
         transition: .2s all ease-in-out;
         opacity:1;
         right:0;
+        /* z-index:0; */
     }
 }
