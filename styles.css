@@ -258,3 +258,71 @@ h1 {
 .Logo_f {
     width:80px;
 }
+
+.Header_burger {
+    display:none;
+}
+
+.Burger_trigger {
+    margin-top:10%;
+    margin-right:30%;
+
+    max-width:50px;
+
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+/* .Menu_wrapper {
+    position: relative;
+    overflow: hidden;
+} */
+
+
+@media screen and (max-width:800px) {
+
+    .Header_burger {
+        display:block;
+        position:absolute;
+        right:0;
+    }
+
+
+    .Menu {
+        position:absolute;
+        right:-50px;
+        height:350px;
+        width:40%;
+        border-left-width:6px;
+        border-left-color:#562F00;
+        border-left-style:solid;
+
+        /* flex-direction:column; */
+        pointer-events: none;
+        visibility: hidden;
+        pointer-events:none;
+        opacity:0;
+        transition: .2s all linear;
+
+    }
+
+    .Menu_wrapper {
+        /* position: relative; */
+        overflow: hidden;
+    }
+
+    .Menu_text {
+        display:flex;
+        flex-direction: column;
+        gap:40px
+    }
+
+    .Menu.active {
+        visibility: visible;
+        pointer-events:inherit;
+        transition: .2s all ease-in-out;
+        opacity:1;
+        right:0;
+    }
+}

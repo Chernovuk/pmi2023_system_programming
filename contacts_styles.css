@@ -16,17 +16,27 @@
     margin-top:60px;
 
     display:flex;
-    flex-wrap:wrap;
+    align-self: flex-start;
+    flex-direction: column;
+    /* flex-wrap:wrap; */
     justify-content: center;
     align-items: center;
+
+    gap:30px;
+}
+
+.Info_txt {
+    display: flex;
+    flex-direction: column;
 }
 
 #Phone {
-    /* max-width:600px; */
-    max-width: 100%;
-    margin-bottom:5%;
-    margin-left:5%;
-    margin-right:5%;
+    width:450px;
+    max-width: 90%;
+    margin-bottom:10%;
+    margin-top:10%;
+    /* margin-left:5%;
+    margin-right:5%; */
 }
 
 .Contacts_refs:active {
@@ -39,7 +49,114 @@
 }
 
 .Contacts_icons {
-    margin-left:10%;
+    margin-left:7%;
     display:flex;
-    gap:30%;
+    gap:20%;
+    /* flex-wrap:wrap; */
+}
+
+
+.Info_Form_wrapper {
+    /* width:90%; */
+    /* align-self: center; */
+    /* justify-self: center; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:5%;
+    margin-left:5%;
+    flex-wrap:wrap;
+    gap:15%;
+
+}
+
+.Feedback {
+    margin-top:5%;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width:400px;
+}
+
+.Info_txt {
+    /* text-align:center; */
+    white-space:nowrap;
+}
+
+#Form {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width:100%;
+    /* width: 400px; */
+    margin-top:5%;
+    margin-bottom:20%;
+    
+    
+   /* border-style:solid;
+    border-color:black;
+    border-width:2px; */
+ 
+}
+
+.Formstyle {
+    padding:20px;
+    width:100%;
+    margin-bottom: 5%;
+
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    font-weight: 250;
+    font-size: 25px;
+    color:#4A2800;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+
+    background-color: antiquewhite;
+
+    border-width:2px;
+    /* border-bottom:0; */
+    border-color:black;
+    /* border-style:solid;
+    border-color:black;
+    border-width:2px;
+    border-bottom:0; */
+
+}
+
+.Commentary {
+    resize: none;
+
+    height:200px;
+
+    margin-top:10%;
+    border-style:solid;
+    border-color:black;
+}
+
+.Number {
+    border-bottom:2px;
+    border-style:solid;
+    border-color:black;
+}
+
+#Send_button {
+    margin-top:15%;
+    height:70px;
+    width:250px;
+    
+    background-color:#FF971B;
+    box-shadow: inset;
+    cursor: pointer;
+}
+
+@media (max-width:800px) {
+    .Info_Form_wrapper {
+        margin:0;
+        
+    }
 }
