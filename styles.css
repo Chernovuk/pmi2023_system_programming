@@ -3,6 +3,7 @@
 
 body {
     margin:0;
+    width:100%;
 }
 
 .Logo_Name {
@@ -26,8 +27,9 @@ body {
 }
 
 .Header {
-    position:relative;
+    /* position:relative; */
     font-family: 'Lora', serif;
+    width:100%;
 }
 
 .Title {
@@ -263,27 +265,19 @@ h1 {
 
 .Header_burger {
     display:none;
+    position:absolute;
+
+    right:10px;
 }
 
 .Burger_trigger {
-    margin-top:10%;
-    margin-right:30%;
-
-    max-width:50px;
-
     display:flex;
     flex-direction: column;
-    gap:10px;
 }
 
-/* .Menu_wrapper {
-    position: relative;
-    overflow: hidden;
-} */
-
-.Header_burger.active {
-    display:block;
-    position:relative;
+.Burger_line {
+    margin-top:25%;
+    width:35px;
 }
 
 
@@ -291,21 +285,18 @@ h1 {
 
     .Header_burger {
         display:block;
-        position:relative;
-        /* right:0;  */
+        /* position:relative; */
     }
-
 
     .Menu {
         position:absolute;
-        right:-50px;
-        /* right:0; */
-        z-index:10;
+        left:-50px;
+
         height:350px;
         width:40%;
-        border-left-width:6px;
-        border-left-color:#562F00;
-        border-left-style:solid;
+        border-right-width:6px;
+        border-right-color:#562F00;
+        border-right-style:solid;
 
         /* flex-direction:column; */
         pointer-events: none;
@@ -317,8 +308,8 @@ h1 {
     }
 
     /* .Menu_wrapper {
+        overflow-x: hidden;
         position: relative;
-        overflow: hidden;
     } */
 
     .Menu_text {
@@ -332,7 +323,15 @@ h1 {
         pointer-events:inherit;
         transition: .2s all ease-in-out;
         opacity:1;
-        right:0;
-        /* z-index:0; */
+        left:0;
+        z-index:50;
+    }
+
+    .Logo {
+        margin-left:5%;
+    }
+
+    .Title {
+        margin-left:3%;
     }
 }
