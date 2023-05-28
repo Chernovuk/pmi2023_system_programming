@@ -6,7 +6,7 @@ $(document).ready(function(){
             url: "telegram_bot.php",
             data: form_data,
             success: swal({
-                title: "Спасибо за отзыв",
+                title: "Спасибо за обращение, скоро вам ответим!",
                 icon: "success",
                 timer: 2000
             })
